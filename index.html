@@ -1,48 +1,173 @@
 <!DOCTYPE html>
-<html>
+<html lang='en'>
 <head>
+	<meta class="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 	<title>cuay</title>
-	<link rel="stylesheet" type="text/css" href="index.css" />
-	<script>
-	window.onload = function() {
-		let col1 = document.getElementById("col1");
-		let col2 = document.getElementById("col2");
-		let col3 = document.getElementById("col3");
-		let height = Math.max(col1.offsetHeight, col2.offsetHeight, col3.offsetHeight);
-		console.log(height);
-		col1.style.height = height + "px";
-		col2.style.height = height + "px";
-		col3.style.height = height + "px";
-	}
-	</script>
+	<!-- Don't forget to add your metadata here -->
+	<link rel='stylesheet' href='css/style.min.css' />
 </head>
 <body>
-	<div id="main">
-		<h1>cuay</h1>
-		<p>
-			My name is cuay, and I am an avid programmer. I've been learning JS and MySQL for 2+ years. I freelance with JS and MySQL for an affordable cost. Inquire about my services today.
-		</p>
+	<!-- Hero(extended) navbar -->
+	<div class="navbar navbar--extended">
+		<nav class="nav__mobile"></nav>
+		<div class="container">
+			<div class="navbar__inner">
+				<a href="index.html" class="navbar__logo">cuay</a>
+				<nav class="navbar__menu">
+					<ul>
+						<li><a href="/docs.html">About</a></li>
+						<li><a href="https://discord.gg/Pj4Nysk">Discord</a></li>
+					</ul>
+				</nav>
+				<div class="navbar__menu-mob"><a href="" id='toggle'><svg role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path fill="currentColor" d="M16 132h416c8.837 0 16-7.163 16-16V76c0-8.837-7.163-16-16-16H16C7.163 60 0 67.163 0 76v40c0 8.837 7.163 16 16 16zm0 160h416c8.837 0 16-7.163 16-16v-40c0-8.837-7.163-16-16-16H16c-8.837 0-16 7.163-16 16v40c0 8.837 7.163 16 16 16zm0 160h416c8.837 0 16-7.163 16-16v-40c0-8.837-7.163-16-16-16H16c-8.837 0-16 7.163-16 16v40c0 8.837 7.163 16 16 16z" class=""></path></svg></a></div>
+			</div>
+		</div>
 	</div>
-	<div id="col1" class="column">
-		<img src="images/code.png" />
-		<h3>Coding</h3>
-		<p>
-			I use JS and MySQL to program bots, libraries, and databases
-		</p>
+	<!-- Hero unit -->
+	<div class="hero">
+		<div class="hero__overlay hero__overlay--gradient"></div>
+		<div class="hero__mask"></div>
+		
+		<div class="hero__inner">
+			<div class="container">
+				<div class="hero__content">
+					<div class="hero__content__inner" id='navConverter'>
+						<h1 class="hero__title">- cuay -</h1>
+						<div align="center">
+						<p class="hero__text">Freelancer, Java developer, and website developer. Inquire about my services today.</p>
+					</div>
+						<a href="/docs" class="button button__accent">Learn More</a>
+						<a href="https://discord.gg/Pj4Nysk" class="button hero__button">Discord</a>
+					</div>
+				</div>
+			</div>
+		</div>
 	</div>
-	<div id="col2" class="column">
-		<img src="images/treasure_chest.png" />
-		<h3>Quality</h3>
-		<p>
-			Enjoy the rewards of quality freelancing
-		</p>
+	<div class="hero__sub">
+		<span id="scrollToNext" class="scroll">
+			<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" class='hero__sub__down' fill="currentColor" width="512px" height="512px" viewBox="0 0 512 512" style="enable-background:new 0 0 512 512;" xml:space="preserve"><path d="M256,298.3L256,298.3L256,298.3l174.2-167.2c4.3-4.2,11.4-4.1,15.8,0.2l30.6,29.9c4.4,4.3,4.5,11.3,0.2,15.5L264.1,380.9c-2.2,2.2-5.2,3.2-8.1,3c-3,0.1-5.9-0.9-8.1-3L35.2,176.7c-4.3-4.2-4.2-11.2,0.2-15.5L66,131.3c4.4-4.3,11.5-4.4,15.8-0.2L256,298.3z"/></svg>
+		</span>
 	</div>
-	<div id="col3" class="column">
-		<img src="images/game_controller.png" />
-		<h3>Experience</h3>
-		<p>
-			A love for gaming makes a perfect game/plugin developer.
-		</p>
+	<!-- Steps -->
+	<div class="steps landing__section">
+		<div class="container">
+			<h2>Who am I?</h2>
+			<p>I am a professional freelancer whose mission is to provide people with high-quality, affordable development.</p>
+		</div>
+		<div class="container">
+			<div class="steps__inner">
+				<div class="step">
+					<div class="step__media">
+						<img src="./images/undraw_designer.svg" class="step__image">
+					</div>
+					<h4>Developing</h4>
+					<p class="step__text">Looking for a custom Discord bot for your server? No problem.</p>
+				</div>
+				<div class="step">
+					<div class="step__media">
+						<img src="./images/undraw_responsive.svg" class="step__image">
+					</div>
+					<h4>Website Development</h4>
+					<p class="step__text">Need a website? Tired of looking for good quality website builders? Contact me.</p>
+				</div>
+				<div class="step">
+					<div class="step__media">
+						<img src="./images/undraw_creation.svg" class="step__image">
+					</div>
+					<h4>Freelancing</h4>
+					<p class="step__text">If you can think it, I can do it.</p>
+				</div>
+			</div>
+		</div>
 	</div>
+	<!-- Expanded sections -->
+	<div class="expanded landing__section">
+		<div class="container">
+			<div class="expanded__inner">
+				<div class="expanded__media">
+					<img src="./images/undraw_browser.svg" class="expanded__image">
+				</div>
+				<div class="expanded__content">
+					<h2 class="expanded__title">No coding required</h2>
+					<p class="expanded__text">You don't need to know anything about what you're doing. As long as you have a domain, I can set up a website, hosting, and an SSL certificate.</p>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="expanded landing__section">
+		<div class="container">
+			<div class="expanded__inner">
+				<div class="expanded__media">
+					<img src="./images/undraw_frameworks.svg" class="expanded__image">
+				</div>
+				<div class="expanded__content">
+					<h2 class="expanded__title">Your choice</h2>
+					<p class="expanded__text">The only limits to my work are your imagination. Tell me what you want and I can do it.</p>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="expanded landing__section">
+		<div class="container">
+			<div class="expanded__inner">
+				<div class="expanded__media">
+					<img src="./images/together.svg" class="expanded__image">
+				</div>
+				<div class="expanded__content">
+					<h2 class="expanded__title">Fast, efficient results</h2>
+					<p class="expanded__text">Need a website, Discord bot, website setup, or algorithm finished in a day? You got it!</p>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- Call To Action -->
+	<div class="cta cta--reverse">
+		<div class="container">
+			<div class="cta__inner">
+				<h2 class="cta__title">Get started now</h2>
+				<p class="cta__sub cta__sub--center">Grab the source code for Samuke to see what I can do.</p>
+				<a href="/downloads/samuke_bot.zip" class="button button__accent">Download Samuke</a>
+			</div>
+		</div>
+	</div>
+	<!-- Footer -->
+	<div class="footer footer--dark">
+		<div class="container">
+			<div class="footer__inner">
+				<a href="index.html" class="footer__textLogo">- cuay -</a>
+				<div class="footer__data">
+					<div class="footer__data__item">
+						<div class="footer__row">
+							Created with <a href="https://www.w3schools.com/howto/howto_website.asp" target="_blank" class="footer__link">HTML, CSS, and Java</a>
+						</div>
+						<div class="footer__row">
+						Code/design by <a href="https://twitter.com/RealCuay" target="_blank" class="footer__link">cuay</a>
+						</div>
+					</div>
+					<div class="footer__data__item">
+						<div class="footer__row">Created for <a href="https://en.oxforddictionaries.com/definition/anyone" target="_blank" class="footer__link">anyone.</a>
+						</div>
+						<div class="footer__row">Special thanks to <a href="https://twitter.com/_ItsJamesJ" target="_blank" class="footer__link">JamesJ</a> for the support!
+						</div>
+					</div>
+					<div class="footer__data__item">
+					<div class="footer__row">
+						<a href="https://github.com/cuay" target="_blank" class="footer__link">GitHub</a>
+					</div>
+					<div class="footer__row">
+						<a href="https://twitter.com/RealCuay" target="_blank" class="footer__link">Twitter</a>
+					</div>
+					<div class="footer__row">
+						<a href="https://www.youtube.com/c/cuaythemineman" target="_blank" class="footer__link">YouTube</a>
+					</div>
+					<div class="footer__row">
+						<a href="./additional.html" class="footer__link">MIT license</a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+<script src='js/app.min.js'></script>
 </body>
 </html>
