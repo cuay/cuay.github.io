@@ -1,0 +1,29 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans');
+* {
+	text-align: center;
+	font-family: 'Open Sans', sans-serif;
+	color: white;
+}
+.column {
+	width: 20%;
+	margin: 25px;
+	display: inline-block;
+	border-radius: 25px;
+	background-color: white;
+	padding: 25px;
+	vertical-align: middle;
+}
+.column * {
+	color: #23272a;
+}
+#main {
+	max-width: 50%;
+	margin: auto;
+}
+body {
+	height: 100%;
+	background-color: #7289da;
+}
+p {
+	line-height: 20px;
+}
