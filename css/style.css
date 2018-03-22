@@ -738,8 +738,8 @@ select {
 
 .landinggray__section:nth-child(odd) {
   background-color: #2c2f33;
-  border-top: 5px solid #99aab5;
-  border-bottom: 5px solid #99aab5; }
+  border-top: 6px solid #99aab5;
+  border-bottom: 6px solid #99aab5; }
 
 .navbar {
   position: fixed;
