@@ -646,8 +646,8 @@ select {
 
 [type="radio"]:checked + label:after {
   border-radius: 50%;
-  border: 1px solid #6C63FF;
-  background-color: #6C63FF;
+  border: 1px solid #7289da;
+  background-color: #7289da;
   z-index: 0;
   transform: scale(1.02); }
 
@@ -954,7 +954,7 @@ select {
   cursor: pointer; }
   @media (min-width: 992px) {
     .hero__sub__down:hover {
-      color: #6C63FF; } }
+      color: #7289da; } }
 
 #scrollToNext {
   transition: 0.7s; }
@@ -1125,7 +1125,7 @@ select {
   padding-right: 16pt;
   display: block;
   cursor: pointer;
-  color: #6C63FF;
+  color: #7289da;
   font-size: 1.225rem;
   min-width: 33%;
   margin-bottom: 1.5rem; }
@@ -1157,8 +1157,8 @@ select {
   margin-bottom: 8pt; }
 
 .footer__link {
-  color: #6C63FF;
-  border-bottom: 1px dotted #6C63FF;
+  color: #7289da;
+  border-bottom: 1px dotted #7289da;
   padding-bottom: 1pt;
   transition: 0.7s; }
   @media (min-width: 992px) {
@@ -1388,7 +1388,7 @@ select {
         .vMenu a:after {
           display: block;
           content: '';
-          border-bottom: 1px solid #6C63FF;
+          border-bottom: 1px solid #7289da;
           transform: scaleX(0);
           transition: transform 250ms ease-in-out; }
         .vMenu a:hover:after {
@@ -1417,6 +1417,6 @@ select {
       .vMenu--active:after {
         display: block;
         content: '';
-        border-bottom: 1px solid #6C63FF;
+        border-bottom: 1px solid #7289da;
         transform: none;
         transition: none; } }
